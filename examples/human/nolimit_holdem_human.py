@@ -11,7 +11,8 @@ from rlcard.utils import print_card
 env = rlcard.make('no-limit-holdem')
 
 human_agent = HumanAgent(env.num_actions)
-agent0 = RandomAgent(env.num_actions)
+agent = RandomAgent(env.num_actions)
+
 # random_agent = RandomAgent(num_actions=env.num_actions)
 
 env.set_agents([human_agent, agent])
